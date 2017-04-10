@@ -1,0 +1,9 @@
+<li>
+  <p
+    data-checked={{@item.isDone}}
+    onclick={{action @toggleItem @item}}
+    >{{@item.text}}</p>
+  <button
+    onclick={{action @deleteItem @item}}
+    >Delete Item</button>
+</li>

@@ -1,7 +1,4 @@
-# todo-list
-
-This README outlines the details of collaborating on this Glimmer application.
-A short introduction of this app could easily go here.
+# GlimmerJS TodoList
 
 ## Prerequisites
 
@@ -14,8 +11,8 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd todo-list`
+* `git clone` this repository
+* `cd glimmerjs-todo-list`
 * `yarn`
 
 ## Running / Development

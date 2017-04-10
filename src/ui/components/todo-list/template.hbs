@@ -1,3 +1,19 @@
-<div>
-  <h1>Welcome to Glimmer!</h1>
+<div id="todo-app">
+  <ul>
+    {{#each items key="@index" as |item|}}
+      <todo-item
+        @item={{item}}
+        @toggleItem={{action toggleItem}}
+        @deleteItem={{action deleteItem}}
+        ></todo-item>
+    {{/each}}
+  </ul>
+
+  <input
+    type="text"
+    placeholder="New todo"
+    value={{newItemText}}
+    onkeyup={{action updateNewItemText}}
+  />
+  <button onclick={{action addItem}}>Add Item</button>
 </div>
